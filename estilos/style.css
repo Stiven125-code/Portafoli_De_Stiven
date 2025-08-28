@@ -1,0 +1,172 @@
+/* Fondo general */
+body {
+    background-image: url(/imagenes/7FPK.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    color: #111;
+}
+
+/* Encabezado */
+header {
+    background-color: rgb(5, 250, 230);
+    max-width: 1800px;
+    color: rgb(17, 16, 16);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 180px; /* para que no se cruce con el menú */
+}
+
+/* Navegación lateral */
+nav {
+    background-color: rgb(3, 3, 3);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+    padding: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Lista del menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+}
+
+/* Cada ítem */
+nav li {
+    margin: 10px 0;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: rgb(251, 240, 240);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #17989a;
+    border-radius: 6px;
+}
+
+/* Imagen del menú (perfil/logo) */
+.img1 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid #fefefe;
+}
+
+.Foto{
+    width: 136px;
+    height:  150px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 2px solid #000000; /*añadir bordes a las imágenes para que resalten*/
+    margin-right: auto;
+    display: block;
+    margin-left: auto;
+    transition: transform 0.3s;/* transición suave */
+}
+
+.Foto:hover {
+    transform: scale(1.1);/*hace que la imagen crezca un poco cuando se pase el cursor*/
+}
+
+
+.galeria{
+    border: 2px solid #d87e1e;
+    }
+
+#galeria img{
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid #ff9100;
+    transition: transform 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Contenido principal */
+main {
+    margin-left: 200px; /* espacio para el menú */
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 244, 248, 0.85);
+    box-shadow: 0 5px 12px rgba(0, 0, 255, 0.3);
+}
+
+section h1,
+section h2,
+section h3 {
+    text-align: center;
+}
+
+/* Tablas (para habilidades) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #080808;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: #222;
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+}
+
+.rainbow-text{
+    animation: rainbow 3s infinite;
+}
+
+@keyframes rainbow{
+    0%{color: green;}
+    14%{color: red;}
+    28%{color: rgb(25, 0, 255);}
+    42%{color: rgb(176, 115, 30);}
+    57%{color: rgb(255, 255, 255);}
+    71%{color: rgb(101, 13, 19);}
+    85%{color: maroon;}
+    100%{color: midnightblue;}
+}
